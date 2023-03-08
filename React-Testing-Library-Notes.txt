@@ -1,0 +1,174 @@
+				========================React Testing Library=============
+
+Node js Required
+
+
+
+Why Unit Testing Is Required ??
+
+Catch Bugs
+Increase Confidence in Application 
+Speeds Up QA time
+Can serves as Documentation
+
+
+			3 Types of Tests
+				Unit Test--> Test a peice of code of a component in isolation(Single Unit in Complete Isolation)
+				Integration Test
+				End to End (E2E) test
+				
+				
+		
+		#4 Let's get our Hand Dirty======
+		
+		npm run test
+		press a  ->running App.js
+		
+		
+		
+		Structure of Test Block
+		Describing wht we are ultimately going to test
+		
+		Render a Component we wanna test
+		Find Elements we want to interact with  --> means div tag, element or custom component
+		Interact with those Elements
+		Assesrt that the results are as Expected
+		
+		import {render, screen} from 'testing-library/react'
+		
+		test("", (callback function) => {
+		
+		})
+		
+			or
+			
+		it("", () => {
+		
+		})
+		
+		
+		==========================#5 Intro to Query Methods======
+		
+		we are going to focus  on->   screen.getByText(/learn react/i)
+			-> screen is way to interact with component that we render. Screen have a bunch of methods we can use to 
+			to get the specific elements that live inside the render(<App>) component
+			
+		Normally 90% of the time you will be using get over find/ query for 
+		
+		
+		
+		
+		
+		
+		=============#6 priority=====================
+		
+		
+		we want to mimic the user interaction as much as possible inside our test 
+		
+		Here we are talking about which query should be use much
+		
+		
+		
+		
+		==============7 Now write the test case=========useing query methods=================
+		
+		
+		findByText is async
+		
+		
+		
+		
+		
+		
+		=============Tutorial #8 - Assertions=================== 
+		means we are working on expect line code in test files
+		
+		Error::  Invariant failed: You should not use <Link> outside a <Router>
+		
+		create a component that wraps TodoFooter component with Browser Router 
+		
+		
+		const MockTodoFooter = () => {
+		
+		}
+		
+		
+		
+	===================   Tutorial #9 - Describe Block ================
+	
+	Assume that we have so many tests and we should have a way of grouping and organizing the test.
+	we can actually do that through describe Block.
+	
+	we can use describe block to group common tests 
+	
+			   Decribe Block
+			  
+				->Test Block
+				->Test Block
+				->Test Block
+				->Test Block
+				
+				Or 
+				When you have more complicated test then you can do like this  
+				Decribe Block
+			  
+				->Test Block
+				->Test Block
+				
+				
+				->Test Block
+				->Test Block
+				
+				
+			
+		
+		========================  Tutorial #10 - Fire Events  ==================
+		
+		we can get the input elements by placeholder text. i.e-> getByPlaceHolderText()
+		
+		
+		
+		
+		=============================Tutorial #13 - Mocking Requests===========================
+		
+		
+		React is by default reseting our mock every single time and i'have 
+		
+		
+		
+		
+		npm run
+
+ts
+eslint
+
+sonar. cube  what it does ?
+it talk about coding syntax
+insted of ifelse it will say to use swict
+replace map with for each
+
+
+
+
+-----------PRIMENG for ui design----------
+
+Good 
+
+Sharing knowledge with each other 
+Learning & exploring new tech 
+ 
+ 
+ 
+ Bad 
+ 
+ Nothing bad 
+ There should be proper desk allocated
+ 
+ 
+
+
+
+
+
+		
+		

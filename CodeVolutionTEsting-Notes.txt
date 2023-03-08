@@ -1,0 +1,118 @@
+// npx create-react-app . --template typescript
+
+npm test
+
+Watch Mode -->> 
+
+
+==================Anatomy of test()===========
+
+test(name,fun, timeout)  --> it Accepts 3 arguments. 
+
+both test() and expect() are methods from jest which create-react-app globally provides in every test. 
+
+
+================= Test Driven Developement =============================
+		--> it is a Software Development Process where you write tests before writing the Software code.
+		Once the Testhas been written , you can write the code to ensure the test pass.
+		
+		
+		
+		=========================  jest watch Mode ===============
+		
+		watch mode is an option that we can pass to jest asking to watch files that have changed since the last commit 
+		and execute test related only to the changed files 
+		
+		An optimization designed to make your test runs fast regardless of How many test you have.
+		
+		
+		
+		=============== How to filter the test picked up by jest =======================
+		
+		======================== describe(name, fn) =====================
+		
+		describe() accepts 2 arguments 
+		
+		describe(group name ,  function that contains the expectations to test)
+		
+		== only , skip
+		descrie.skip('', ()=> {
+		})
+		
+		descrie.only('', ()=> {
+		})
+		
+		Nested describe Block
+		
+		Multiple describe Block
+		
+		==> test suites are corresponding to a file not to a individual describe block.
+		==> one file is one test suite
+		
+		
+		
+		======================================Tutorial 13 ====file convention follews by rect wrt to jest===================================
+		
+		Files with .test.js or .test.tsx suffix
+		Files with .spec.js or .spec.tsx suffix
+		Files with .js or .tsx suffix  in__tests__ folder
+		
+		
+		==> we can use test() or it() global method 
+		
+		==> fit() => replacement of test.only 
+		==> xit() => replacement of test.skip 
+		
+		
+		=======================  Tutorial 14 ================ code coverage ===================
+		
+		Metric that can help you to under stand how much of your software code is tested
+		
+		Statement COverage
+		Brach COverage
+		function coverage
+		line coverage
+		
+		go to package. json  inside scripts
+		
+		"coverage": "npm test --coverage --watchAll"
+		--> coverage generally takes time , we don't want that as a part of our regular test scripts. 
+		
+		command: npm run coverage
+			
+		npm run test -- --coverage   ==> correct
+		
+		===========================================================Lecture 15 Assertion ============================
+		
+		Assertions:
+		---------------
+		
+		--> when writing tests, we often need to check that values meet certain conditions 
+		--> Assertions decide if test passes or fails. 
+		Different parts of Assertions
+		-----------------------------
+		
+		expect() method::
+		
+		
+		===================================== Rect Testing Library ==========================
+		
+		What Not to Test ?
+		1: implementation details
+		2: Third party code
+		3: 
+		
+		
+		
+		Question: How do i knoe for each element in my component??
+		-------------------------------------------------------------------
+		google rtl
+		click on Docs => core Api => Queries ==> By role ==> A table of Html Elements ==> w2.org/TR/html-aria/
+		
+		
+		getByRole() ==> should be your top preference
+		
+
+
+========================= TIll Lecture 22 ===================
+		  
